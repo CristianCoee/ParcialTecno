@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+   
+    background-size: cover;
+    font-family: sans-serif;
+    
+  }
+  
+  .login-box {
+    width: 500px;
+    height: 450px;
+    background: rgb(247, 247, 250); /*color de fondo del cuadreo*/
+    border-color: rgb(5, 5, 53);
+    border: 10px;
+    color: rgb(26, 5, 119); /* color usuario y contraseña y titulo */
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+  }
+  
+  
+  
+  .login-box h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+  }
+  
+  .login-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .login-box input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .login-box input[type="text"], .login-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid rgb(26, 5, 119); /*color de las lineas*/
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: rgb(26, 5, 119);
+    font-size: 16px;
+  }
+  
+  .login-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #0f095f; /*color boton*/
+    color: rgb(230, 229, 235);
+    font-size: 18px; /*color de la letra del boton*/
+    border-radius: 20px;
+  }
+  
+  .login-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: #4900f3; /*color al seleccionar el boton*/
+    color: rgb(92, 91, 91); /* color de los link*/
+  }
+  
+  .login-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(26, 5, 119); /* color de los link*/
+  }
+  
+  .login-box a:hover {
+    color: rgb(5, 5, 5);
+  }
+  
