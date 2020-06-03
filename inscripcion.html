@@ -50,27 +50,30 @@
     <form>
       <!-- nombre -->
       <label for="username">NOMBRE</label>
-      <input type="text" placeholder="Usuario">
+      <input type="text" placeholder="Nombre" class="form-control" id="validationDefault03" required>
        <!-- apellido -->
       <label for="username">APELLIDO</label>
-      <input type="text" placeholder="Usuario">
+      <input type="text" placeholder="Apellido" class="form-control" id="validationDefault03" required>
       <!-- PASSWORD INPUT -->
       <label for="password">CONTRASEÑA</label>
-      <input type="password" placeholder="Contraseña">
+      <input type="password" placeholder="Contraseña" class="form-control" id="validationDefault03" required>
       
        <!-- ROL -->
        <label for="username">ROL</label>
-       <select class="form-control" id="exampleFormControlSelect1">
+       <select class="custom-select" id="validationDefault04" required>
         <option>Seleccione una opción</option>
         <option>Estudiante</option>
         <option>Profesor</option>
       </select><br/> <br/>
       <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-        <label class="form-check-label" for="defaultCheck1">
-          Acepto Condiciones
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+        <label class="form-check-label" for="invalidCheck2">
+          Acepto los terminos
         </label>
-      <br/> <input type="submit" value="Registrarte">
+      </div>
+      <br/> 
+      <a class="" href="loguin.html">
+      <input type="button" value="Registrarte"> </a>
       <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p><br>
       <a href="#">¿Ya tienes una cuenta? Iniciar sesión</a>
       
