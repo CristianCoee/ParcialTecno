@@ -6,7 +6,8 @@
 
     <!-- Bootstrap CSS -->
     <link href="loguin.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
@@ -20,12 +21,10 @@
     <a class="navbar-brand" href="#">
       <img src="img//ulearn (2).png" width="100" height="100" alt="">
   </a>
-
   <form class="form-inline">
     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="color: antiquewhite;">
     <button type="button" class="btn btn-outline-dark" style="color: wheat;">BUSCAR</button>
-  </form>
-  
+  </form> 
   <a class="navbar-brand" href="index.html">
     
     <nav class="navbar navbar-light" style="background-color:rgb(26, 5, 119)">
@@ -37,16 +36,23 @@
       <a class="navbar-brand" href="loguin.html">
         <button type="button" class="btn btn-outline-dark" style="color: wheat;">INICIAR SESION</button>
         </a>
-        <a class="navbar-brand" href="inscripcion.html">
-            <button type="button" class="btn btn-outline-dark" style="color: wheat;">REGISTRARSE</button>
-          </a>
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop1" type="button" class="btn btn-outline-dark" data-toggle="dropdown" 
+          aria-haspopup="true" aria-expanded="false" style="color: blanchedalmond;">
+            REGISTRARSE
+          </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="inscripcion_Alumnos.html">ALUMNO</a>
+            <a class="dropdown-item" href="inscripcion_Docente.html">DOCENTE</a>
+          </div>
+        </div>
   </a>
   </nav>
   </nav>
   </nav>
 
 <!-- card-->
-<br/>
+<br/>s
 <div class="row">
  <div class="col-sm-3">
     <div class="card">
@@ -63,7 +69,15 @@
       <div class="card-body">
         <CENTER> <h5 class="card-title">2</h5>
         <p class="card-text">INSCRIBITE.</p>
-        <a href="inscripcion.html" class="btn btn-primary">FORMATO DE REGISTRO</a> </CENTER>
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop1" type="button" class="btn btn-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: blanchedalmond;">
+            REGISTRARSE
+          </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="inscripcion_Alumnos.html">ALUMNO</a>
+            <a class="dropdown-item" href="inscripcion_Docente.html">DOCENTE</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
