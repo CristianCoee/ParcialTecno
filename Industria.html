@@ -14,41 +14,60 @@
   </head>
   <body>
 <!-- ingresar imagen-->
+<!-- ingresar imagen-->
+
 <div class="container">
-
-  <nav class="navbar navbar-light" style="background-color: rgb(26, 5, 119)">
-    <a class="navbar-brand" href="#">
-      <img src="img//ulearn (2).png" width="100" height="100" alt="">
-  </a>
-
-  <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="color: antiquewhite;">
-    <button type="button" class="btn btn-outline-dark" style="color: wheat;">BUSCAR</button>
-  </form>
-  
-  <a class="navbar-brand" href="index.html">
+  <div class="col-sm-12">
+   <nav class="navbar navbar-light" style="background-color: rgb(26, 5, 119)">
+    <a class="navbar-brand" href="index.html">
+      <img src="img//ulearn (2).png" width="90" height="90" alt="">
+         </a>
+         <!-- Buscador-->
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2"  type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="color: aliceblue;">BUSCAR</button>
+    </form>
+<!-- Menu-->
+    <nav class="navbar navbar-expand-lg" class="navbar-light bg-light navbar navbar-light" style="background-color: rgb(26, 5, 119);">
+      <a class="navbar-brand" href="#" style="color: aliceblue;"> </a>
+      <button class="navbar-toggler"  class="navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color: aliceblue;">
+        <span class="navbar-toggler-icon" style="color: aliceblue;"></span>
+      </button>
     
-    <nav class="navbar navbar-light" style="background-color:rgb(26, 5, 119)">
-        <button type="button" class="btn btn-outline-dark" style="color: wheat;">INCIO</button>
-    </a>
-    <a class="navbar-brand" href="ayuda.html">
-        <button type="button" class="btn btn-outline-dark" style="color: wheat;">AYUDA</button>
-      </a>
-      <a class="navbar-brand" href="loguin.html">
-        <button type="button" class="btn btn-outline-dark" style="color: wheat;">INICIAR SESION</button>
-        </a>
-        <a class="navbar-brand" href="inscripcion.html">
-            <button type="button" class="btn btn-outline-dark" style="color: wheat;">REGISTRARSE</button>
-          </a>
-  </a>
-  </nav>
-  </nav>
-  </nav>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html" style="color: aliceblue;">INICIO <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="Ayuda.html" style="color: aliceblue;">AYUDA <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="loguin.html" style="color: aliceblue;">INICIAR SESION <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style= "color: aliceblue"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              REGISTRARSE
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="inscripcion_Docente.html">DOCENTE</a>
+              <a class="dropdown-item" href="inscripcion_Alumnos.html">ESTUDIANTE</a></div>
+          </li>
+        </ul> 
+      </div>
+  </nav>   
+    </nav>
+  </div>
+  </div>
+
 
 <!-- card-->
 <br/>
-<div class="row">
- <div class="col-sm-3">
+<br/>
+<div class="container">
+<div class="row row-cols-1 row-cols-md-4">
+
+ <div class="card-10">
     <div class="card">
       <div class="card-body">
         <CENTER>    <h5 class="card-title">1</h5>
@@ -58,18 +77,26 @@
     </div>
   </div>
 
-  <div class="col-sm-3">
+  <div class="card-10">
     <div class="card">
       <div class="card-body">
         <CENTER> <h5 class="card-title">2</h5>
         <p class="card-text">INSCRIBITE.</p>
-        <a href="inscripcion.html" class="btn btn-primary">FORMATO DE REGISTRO</a> </CENTER>
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop1" type="button" class="btn btn-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: blanchedalmond;">
+            REGISTRARSE
+          </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="inscripcion_Alumnos.html">ALUMNO</a>
+            <a class="dropdown-item" href="inscripcion_Docente.html">DOCENTE</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
  
-    <div class="col-sm-3">
+    <div class="card-10">
       <div class="card">
         <div class="card-body">
          <CENTER> <h5 class="card-title">3</h5>
@@ -79,18 +106,20 @@
       </div>
     </div>
   
-    <div class="col-sm-3">
+    <div class="card-10">
       <div class="card">
         <div class="card-body">
         <CENTER> <h5 class="card-title">4</h5>
-          <p class="card-text">COMIENZA APRENDER.</p>
+          <p class="card-text">APRENDE.</p>
           <a href="loguin.html" class="btn btn-primary">INICIAR SESIÓN</a> </CENTER>
         </div>
       </div>
-    
     </div>
 
 </div>
+</div>
+
+<br/>
         
 <img src="img/Industria1.png" class="rounded mx-auto d-block py-3" alt="...">
 
